@@ -28,8 +28,8 @@ const projects = [
 ]
 
 const ProjectsGrid = () => (
-  <section className="py-16 px-4 max-w-6xl mx-auto w-full">
-    <h2 className="text-3xl font-bold mb-8 text-cyan-300 text-center">Projects</h2>
+  <section className="pb-16 px-4 max-w-6xl mx-auto w-full">
+    <h2 className="text-3xl font-bold mb-8 text-primary text-center">Projects</h2>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       {projects.map((project) => (
         <div

@@ -165,7 +165,7 @@ const HeroSection = ({ showContact = false }: { showContact?: boolean }) => (
           <div className="absolute inset-0 bg-gradient-to-r from-slate-400 via-slate-500 to-slate-600 rounded-full blur-md opacity-50"></div>
           <div className="relative w-full h-full rounded-full border-4 border-slate-600 overflow-hidden">
             <img
-              src="/profile.jpg"
+              src="/profile.JPG"
               alt="Daniagui"
               className="w-full h-full object-cover"
             />

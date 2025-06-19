@@ -28,7 +28,7 @@ const ContactSection = () => (
     </form>
     <div className="flex gap-6 justify-center">
       <a
-        href="https://www.linkedin.com/in/your-linkedin/"
+        href="https://www.linkedin.com/in/daniel-esteban-aguilera-figueroa-software-developer/"
         target="_blank"
         rel="noopener noreferrer"
         className="text-xl hover:text-primary"
@@ -39,7 +39,7 @@ const ContactSection = () => (
         LinkedIn
       </a>
       <a
-        href="https://github.com/your-github"
+        href="https://github.com/Daniagui12"
         target="_blank"
         rel="noopener noreferrer"
         className="text-xl hover:text-primary"

@@ -12,7 +12,7 @@ const skills = [
 ];
 
 const AboutSection = () => (
-  <section className="py-16 px-4 max-w-3xl mx-auto w-full">
+  <section className="pb-16 px-4 max-w-3xl mx-auto w-full">
     <h2 className="text-3xl font-bold mb-4 text-primary">About Me</h2>
     <p className="text-lg mb-2 text-slate-500">
       I&apos;m a passionate data engineer with experience designing, building,
@@ -22,10 +22,6 @@ const AboutSection = () => (
     <p className="text-lg mb-2 text-slate-500">
       I love working with Python, SQL, and modern data tools to solve real-world
       problems and empower organizations with actionable insights.
-    </p>
-    <p className="text-lg text-muted-foreground mb-8">
-      <span className="font-semibold text-primary">Fun fact:</span> I once built a data
-      pipeline to track my coffee consumption trends!
     </p>
 
     <div className="my-12">
