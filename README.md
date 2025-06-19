@@ -1,24 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Daniagui Personal Website
+
+A modern, visually appealing personal website for a data engineer, built with Next.js and Tailwind CSS. The site features:
+
+- Clean, component-based architecture for maintainability
+- Interactive charts and graphs to showcase data engineering skills
+- Eye-catching gifs and visuals for a lively user experience
+- Responsive design and dark mode support
+
+## Structure
+
+- `app/` — Main app directory (Next.js App Router)
+- `components/` — Reusable React components (to be created)
+- `public/` — Static assets (SVGs, gifs, images)
+- `lib/` — Utility functions
 
 ## Getting Started
 
-First, run the development server:
+1. Install dependencies: `bun install` or `npm install`
+2. Run the development server: `bun dev` or `npm run dev`
+3. Visit [http://localhost:3000](http://localhost:3000)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project is being upgraded to include beautiful charts, animated gifs, and a professional data engineering portfolio layout.
 
 ## Learn More
 
