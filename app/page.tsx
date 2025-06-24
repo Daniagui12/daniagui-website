@@ -41,7 +41,7 @@ export default function Home() {
           onClick={goHome}
           className="text-lg font-medium text-primary hover:text-slate-400 transition-colors w-[100px] text-left"
         >
-          Daniagui
+          Daniel Aguilera
         </button>
         <div className="flex-1 flex justify-center">
           <div className="bg-slate-900/90 backdrop-blur-sm rounded-full p-2 shadow-lg border border-slate-800">

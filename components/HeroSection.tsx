@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const AnimatedBackground = () => (
@@ -169,7 +170,7 @@ const HeroSection = ({ showContact = false }: { showContact?: boolean }) => (
       <HighlightCard />
       <div className="flex flex-col items-center w-full z-10 pt-16 pb-8">
         <h1 className="relative text-4xl md:text-6xl font-extrabold mb-4 bg-gradient-to-r from-cyan-400 via-sky-400 to-fuchsia-500 bg-clip-text text-transparent drop-shadow-lg animate-gradient-x">
-          Hi, I&apos;m Daniagui
+          Hi, I&apos;m Daniel Aguilera
         </h1>
         <h2 className="relative text-xl md:text-2xl font-medium text-cyan-300 mb-4 animate-fade-in">
           Data Engineer & Data Enthusiast
@@ -177,7 +178,13 @@ const HeroSection = ({ showContact = false }: { showContact?: boolean }) => (
         <div className="relative w-32 h-32 mb-6 animate-fade-in delay-100">
           <div className="absolute inset-0 bg-gradient-to-r from-slate-400 via-slate-500 to-slate-600 rounded-full blur-md opacity-50"></div>
           <div className="relative w-full h-full rounded-full border-4 border-slate-600 overflow-hidden">
-            <img src="/profile.JPG" alt="Daniagui" className="w-full h-full object-cover" />
+            <Image
+              src="/profile.JPG"
+              alt="Daniel Aguilera"
+              className="w-full h-full object-cover"
+              width={100}
+              height={100}
+            />
           </div>
         </div>
         <p className="relative max-w-xl text-lg text-slate-200 animate-fade-in delay-100">
