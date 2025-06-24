@@ -38,8 +38,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground">
-      {/* Burger Menu for Mobile */}
-      <div className="md:hidden z-50">
+      <div className="md:hidden">
         <Menu
           right={false}
           width={'60%'}
@@ -105,12 +104,11 @@ export default function Home() {
           </button>
         </Menu>
       </div>
-      {/* Desktop Nav */}
       <nav className="w-full flex flex-col gap-4 md:flex-row md:items-center py-4 px-2 md:py-8 md:px-8 hidden md:flex">
         <div className="flex w-full justify-between md:w-auto md:block">
           <button
             onClick={goHome}
-            className="text-base md:text-lg font-medium text-primary hover:text-slate-400 transition-colors w-auto md:w-[100px] text-left"
+            className="text-base md:text-lg font-medium text-primary hover:text-slate-400 transition-colors w-auto md:w-[150px] text-left"
           >
             Daniel Aguilera
           </button>
@@ -147,8 +145,6 @@ export default function Home() {
           Contact
         </button>
       </nav>
-
-      {/* Content */}
       <main className="flex-1">
         {activeTab === 'home' && (
           <>

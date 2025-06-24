@@ -106,7 +106,7 @@ const DataWave = () => (
 )
 
 const HighlightCard = () => (
-  <div className="absolute top-8 right-8 bg-slate-800/80 border border-cyan-400 rounded-xl shadow-lg px-6 py-3 backdrop-blur-md animate-fade-in">
+  <div className="absolute top-4 right-4 md:top-8 md:right-8 bg-slate-800/80 border border-cyan-400 rounded-lg md:rounded-xl shadow-lg px-3 py-2 md:px-6 md:py-3 backdrop-blur-md animate-fade-in text-sm md:text-base">
     <span className="text-cyan-300 font-semibold">Now:</span>{' '}
     <span className="text-slate-200">Building data pipelines 🚀</span>
   </div>
