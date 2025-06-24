@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 const ContactSection = () => (
   <section className="py-16 px-4 max-w-2xl mx-auto">
@@ -35,7 +35,7 @@ const ContactSection = () => (
       >
         <span role="img" aria-label="LinkedIn">
           🔗
-        </span>{" "}
+        </span>{' '}
         LinkedIn
       </a>
       <a
@@ -46,11 +46,11 @@ const ContactSection = () => (
       >
         <span role="img" aria-label="GitHub">
           🐙
-        </span>{" "}
+        </span>{' '}
         GitHub
       </a>
     </div>
   </section>
-);
+)
 
-export default ContactSection;
+export default ContactSection

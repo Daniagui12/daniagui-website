@@ -1,37 +1,38 @@
-"use client";
+'use client'
 
-import { useState, useRef } from "react";
-import AboutSection from "@/components/AboutSection";
-import ContactSection from "@/components/ContactSection";
-import HeroSection from "@/components/HeroSection";
-import ProjectsGrid from "@/components/ProjectsGrid";
+import { useRef, useState } from 'react'
+
+import AboutSection from '@/components/AboutSection'
+import ContactSection from '@/components/ContactSection'
+import HeroSection from '@/components/HeroSection'
+import ProjectsGrid from '@/components/ProjectsGrid'
 
 const TABS = [
-  { label: "Home", value: "home" },
-  { label: "About", value: "about" },
-  { label: "Projects", value: "projects" },
-];
+  { label: 'Home', value: 'home' },
+  { label: 'About', value: 'about' },
+  { label: 'Projects', value: 'projects' },
+]
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState("home");
-  const contactRef = useRef<HTMLDivElement>(null);
+  const [activeTab, setActiveTab] = useState('home')
+  const contactRef = useRef<HTMLDivElement>(null)
 
   const scrollToContact = () => {
-    if (activeTab !== "home") {
-      setActiveTab("home");
+    if (activeTab !== 'home') {
+      setActiveTab('home')
       // Wait for tab change to complete
       setTimeout(() => {
-        contactRef.current?.scrollIntoView({ behavior: "smooth" });
-      }, 100);
+        contactRef.current?.scrollIntoView({ behavior: 'smooth' })
+      }, 100)
     } else {
-      contactRef.current?.scrollIntoView({ behavior: "smooth" });
+      contactRef.current?.scrollIntoView({ behavior: 'smooth' })
     }
-  };
+  }
 
   const goHome = () => {
-    setActiveTab("home");
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+    setActiveTab('home')
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
 
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground">
@@ -51,8 +52,8 @@ export default function Home() {
                   onClick={() => setActiveTab(value)}
                   className={`px-6 py-2 text-sm font-medium transition-all duration-300 rounded-full ${
                     activeTab === value
-                      ? "bg-slate-700 text-white shadow-sm"
-                      : "text-slate-400 hover:text-slate-200 hover:bg-slate-800"
+                      ? 'bg-slate-700 text-white shadow-sm'
+                      : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800'
                   }`}
                 >
                   {label}
@@ -71,7 +72,7 @@ export default function Home() {
 
       {/* Content */}
       <main className="flex-1">
-        {activeTab === "home" && (
+        {activeTab === 'home' && (
           <>
             <HeroSection />
             <div ref={contactRef}>
@@ -79,9 +80,9 @@ export default function Home() {
             </div>
           </>
         )}
-        {activeTab === "about" && <AboutSection />}
-        {activeTab === "projects" && <ProjectsGrid />}
+        {activeTab === 'about' && <AboutSection />}
+        {activeTab === 'projects' && <ProjectsGrid />}
       </main>
     </div>
-  );
+  )
 }

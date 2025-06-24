@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 
 const AnimatedBackground = () => (
   <svg
@@ -10,7 +10,12 @@ const AnimatedBackground = () => (
   >
     <circle cx="200" cy="200" r="120" stroke="#64748b" strokeWidth="2" fill="none" />
     <circle cx="600" cy="200" r="80" stroke="#334155" strokeWidth="2" fill="none" />
-    <polyline points="0,350 200,250 400,350 600,250 800,350" stroke="#0ea5e9" strokeWidth="2" fill="none" />
+    <polyline
+      points="0,350 200,250 400,350 600,250 800,350"
+      stroke="#0ea5e9"
+      strokeWidth="2"
+      fill="none"
+    />
     <g className="animate-pulse">
       <circle cx="400" cy="100" r="8" fill="#f59e42" />
       <circle cx="300" cy="300" r="6" fill="#0ea5e9" />
@@ -81,12 +86,16 @@ const DataWave = () => (
     xmlns="http://www.w3.org/2000/svg"
     aria-hidden="true"
   >
-    <path
-      d="M0 30 Q 100 0 200 30 T 400 30 T 600 30 T 800 30 V60 H0 Z"
-      fill="url(#wave-gradient)"
-    />
+    <path d="M0 30 Q 100 0 200 30 T 400 30 T 600 30 T 800 30 V60 H0 Z" fill="url(#wave-gradient)" />
     <defs>
-      <linearGradient id="wave-gradient" x1="0" y1="0" x2="800" y2="0" gradientUnits="userSpaceOnUse">
+      <linearGradient
+        id="wave-gradient"
+        x1="0"
+        y1="0"
+        x2="800"
+        y2="0"
+        gradientUnits="userSpaceOnUse"
+      >
         <stop stopColor="#334155" />
         <stop offset="0.5" stopColor="#64748b" />
         <stop offset="1" stopColor="#0ea5e9" />
@@ -97,7 +106,7 @@ const DataWave = () => (
 
 const HighlightCard = () => (
   <div className="absolute top-8 right-8 bg-slate-800/80 border border-cyan-400 rounded-xl shadow-lg px-6 py-3 backdrop-blur-md animate-fade-in">
-    <span className="text-cyan-300 font-semibold">Now:</span>{" "}
+    <span className="text-cyan-300 font-semibold">Now:</span>{' '}
     <span className="text-slate-200">Building data pipelines 🚀</span>
   </div>
 )
@@ -134,7 +143,9 @@ const ContactForm = () => (
         rel="noopener noreferrer"
         className="text-2xl text-cyan-300 hover:text-white"
       >
-        <span role="img" aria-label="LinkedIn">🔗</span>
+        <span role="img" aria-label="LinkedIn">
+          🔗
+        </span>
       </a>
       <a
         href="https://github.com/your-github"
@@ -142,7 +153,9 @@ const ContactForm = () => (
         rel="noopener noreferrer"
         className="text-2xl text-cyan-300 hover:text-white"
       >
-        <span role="img" aria-label="GitHub">🐙</span>
+        <span role="img" aria-label="GitHub">
+          🐙
+        </span>
       </a>
     </div>
   </div>
@@ -164,15 +177,12 @@ const HeroSection = ({ showContact = false }: { showContact?: boolean }) => (
         <div className="relative w-32 h-32 mb-6 animate-fade-in delay-100">
           <div className="absolute inset-0 bg-gradient-to-r from-slate-400 via-slate-500 to-slate-600 rounded-full blur-md opacity-50"></div>
           <div className="relative w-full h-full rounded-full border-4 border-slate-600 overflow-hidden">
-            <img
-              src="/profile.JPG"
-              alt="Daniagui"
-              className="w-full h-full object-cover"
-            />
+            <img src="/profile.JPG" alt="Daniagui" className="w-full h-full object-cover" />
           </div>
         </div>
         <p className="relative max-w-xl text-lg text-slate-200 animate-fade-in delay-100">
-          I build robust data pipelines, automate workflows, and turn data into insights. Welcome to my portfolio!
+          I build robust data pipelines, automate workflows, and turn data into insights. Welcome to
+          my portfolio!
         </p>
         <DataWave />
       </div>
